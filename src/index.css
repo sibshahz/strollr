@@ -16,3 +16,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 } */
+
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Baloo";
+  src: url("../fonts/Baloo-Regular-webfont.woff");
+}

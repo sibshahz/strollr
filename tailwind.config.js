@@ -1,10 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      nunito: ["Nunito", ...fontFamily.sans],
+      baloo: ["Baloo", ...fontFamily.sans],
+    },
     extend: {
       colors: {
         primary: {
