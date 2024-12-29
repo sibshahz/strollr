@@ -1,14 +1,18 @@
 import React from 'react'
+import Banner from '../../components/banner/banner.component'
+import Activity from '../../components/activity/activity.component'
 
-
+const bannerData = {
+  title: 'Hi, John Doe!',
+  subtitle: "Let's pick up where we left off and keep the momentum going.",
+  image: '/remove_bg_characters.png',
+}
 
 const DashboardPage: React.FC = () => {
   return (
-    <div>Dashboard Page
-      <h1 className='text-5xl text-accent-navy font-nunito font-extrabold'>Heading for the colours test...</h1>
-      <h1 className='text-5xl text-accent-navy font-baloo '>Heading for the colours test...</h1>
-      <h5 className='headingOne'>A h5 heading is here...</h5>
-
+    <div className='flex flex-col gap-10'>
+      <Banner {...bannerData} />
+      <Activity />
     </div>
   )
 }
