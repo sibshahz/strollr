@@ -12,6 +12,11 @@ export default {
       baloo: ["Baloo", ...fontFamily.sans],
     },
     extend: {
+      fontSize: {
+        headline: {
+          h1: ['1.75rem', { lineHeight: '2.25rem', letterSpacing: '0.01em' }],
+        }
+      },
       colors: {
         primary: {
           main: "#1A631B",
@@ -71,5 +76,21 @@ export default {
       },
     },
   },
-  plugins: [],
+plugins: [
+    function ({ addUtilities, theme }) {
+      addUtilities({
+        '.headingOne': {
+          fontFamily: theme('fontFamily.baloo'),
+          fontSize: theme('fontSize.headline.h1'),
+          color: theme('colors.primary.main'),
+        },
+        '.logoHeading': {
+          fontFamily: theme('fontFamily.baloo'),
+          fontSize: "3rem",
+          lineHeight: "1",
+          color: theme('colors.primary.background'),
+        },
+      });
+    },
+  ],
 }

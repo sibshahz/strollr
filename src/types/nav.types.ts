@@ -1,6 +1,9 @@
+import { IconProps } from "./icon.types";
+
 export interface NavItemProps {
-  icon: string;
+  icon: React.FC<IconProps>;
   label: string;
+  link: string;
   isActive?: boolean;
 }
 
