@@ -62,7 +62,7 @@ const LogoComponent: React.FC = () => {
 const NavLinkComponent: React.FC<NavItemProps> = ({ icon, label, link }) => {
   return (
     <>
-    <NavLink to={link} className={"relative z-20 w-full"}>
+    <NavLink to={link} className={"z-20 w-full relative"}>
       {({ isActive }) => (
         <>
         {/* <span className="rounded-br-3xl left-5 bg-primary-background w-full h-2 block absolute top-2"></span> */}
