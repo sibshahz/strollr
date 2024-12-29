@@ -44,7 +44,7 @@ nav .active:before {
 nav .active:after {
   content: "";
   position: absolute;
-  top: 68px;
+  top: 64px;
   z-index: -1;
   right: -2px;
   height: 80px;

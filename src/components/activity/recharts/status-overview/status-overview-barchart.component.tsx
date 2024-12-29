@@ -69,7 +69,7 @@ export default class StatusOverviewBarChart extends PureComponent {
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip content={<CustomTooltip />} />
+          <Tooltip content={<CustomTooltip active={undefined} payload={undefined} label={undefined} />} />
           <Legend content={<CustomLegend />} />
           <Bar dataKey="inActiveUsers" fill="#1A631B" className="hover:cursor-pointer" />
           <Bar dataKey="activeUsers" fill="#E5E5E5" className="hover:cursor-pointer" />

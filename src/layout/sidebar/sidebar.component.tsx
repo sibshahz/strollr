@@ -79,7 +79,7 @@ const NavLinkComponent: React.FC<NavItemProps> = ({ icon, label, link }) => {
                 fill: isActive ? "#1A631B" : "#FFF", // Green for active, white for inactive
               })}
             </span>
-            <span className={`font-nunito font-normal text-lg tracking-wide z-20 ${
+            <span className={`font-nunito font-normal text-base tracking-wide z-20 ${
               isActive ? "text-primary-main" : ""
             }`}>
               {label}
