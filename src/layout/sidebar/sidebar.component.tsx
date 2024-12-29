@@ -95,7 +95,7 @@ const NavLinkComponent: React.FC<NavItemProps> = ({ icon, label, link }) => {
 const SideBar: React.FC = () => {
   return (
     <div className="flex flex-row bg-primary-background">
-      <div className="nav-sidebar rounded-r-[36px] shrink-0 w-auto pl-12 bg-primary-main max-w-fit flex min-h-screen height-screen flex-col">
+      <div className="nav-sidebar rounded-r-[36px] shrink-0 w-auto pl-12 bg-primary-main max-w-fit flex min-h-screen h-screen flex-col fixed">
         <LogoComponent />
         <div className="nav-container flex flex-col justify-between h-full mt-4">
           <nav>
@@ -110,7 +110,7 @@ const SideBar: React.FC = () => {
           </nav>
         </div>
       </div>
-      <main className="w-full bg-primary-background p-10">
+      <main className="w-full bg-primary-background p-10 ml-72 min-h-screen">
         <Outlet />
       </main>
     </div>

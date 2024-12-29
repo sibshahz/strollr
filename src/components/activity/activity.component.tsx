@@ -1,7 +1,7 @@
 import React from 'react'
 import UserActivity from './user.component'
 import StatusOverview from './status-overview.component'
-import { ActivityOverview } from './activity-chart/activity-overview.component'
+import ActivityOverviewRecharts from './recharts/activity-overview/activity-overview.component'
 
 
 const Activity = () => {
@@ -11,7 +11,9 @@ const Activity = () => {
       <UserActivity />
       <StatusOverview />
       </div>
-<ActivityOverview />
+      <div className='col-span-6 xl:col-span-2'>
+      <ActivityOverviewRecharts />
+      </div>
     </div>
   )
 }
