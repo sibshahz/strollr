@@ -1,4 +1,3 @@
-import React from "react";
 
 const data = [
   { name: "Outdoor Activities", value: 85, fillColor: "#1cb0f6" },

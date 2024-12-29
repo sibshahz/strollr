@@ -1,4 +1,3 @@
-import React from 'react'
 import UserActivity from './user.component'
 import StatusOverview from './status-overview.component'
 import ActivityOverviewRecharts from './recharts/activity-overview/activity-overview.component'

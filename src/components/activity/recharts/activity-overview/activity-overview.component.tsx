@@ -1,4 +1,3 @@
-import React from 'react'
 import PieChartComponent from './pie-chart.component'
 import ActivityBarComponent from './activity-bar.component'
 

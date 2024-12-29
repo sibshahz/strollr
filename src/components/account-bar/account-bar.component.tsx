@@ -1,4 +1,3 @@
-import React from "react";
 import { InputSearch } from "./input-search.component";
 
 const AccountBar = () => {

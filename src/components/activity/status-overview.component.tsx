@@ -1,4 +1,3 @@
-import React from 'react'
 import { UserStatusOverviewRecharts } from './recharts/status-overview/status-overview.component'
 
 const StatusOverview = () => {
