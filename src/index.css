@@ -27,3 +27,29 @@
   font-family: "Baloo";
   src: url("../fonts/Baloo-Regular-webfont.woff");
 }
+
+nav .active:before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: 0px;
+  height: 60px;
+  width: 40%;
+  background: transparent;
+  z-index: -1;
+  border-bottom-right-radius: 50%;
+  box-shadow: 0 30px 0 0 #F2F8F2;
+}
+
+nav .active:after {
+  content: "";
+  position: absolute;
+  top: 68px;
+  z-index: -1;
+  right: -2px;
+  height: 80px;
+  width: 40%;
+  background: transparent;
+  border-top-right-radius: 50%;
+  box-shadow: 0 -30px 0 0 #F2F8F2;
+}

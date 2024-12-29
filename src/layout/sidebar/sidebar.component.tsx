@@ -61,43 +61,41 @@ const LogoComponent: React.FC = () => {
 
 const NavLinkComponent: React.FC<NavItemProps> = ({ icon, label, link }) => {
   return (
-    <NavLink to={link}>
+    <>
+    <NavLink to={link} className={"relative z-20 w-full"}>
       {({ isActive }) => (
         <>
-        <span className={
-          `pre-nav-span
-          ${isActive ? "active bg-primary-background rounded-br-full" : " bg-primary-main "}`
-        }></span>
+        {/* <span className="rounded-br-3xl left-5 bg-primary-background w-full h-2 block absolute top-2"></span> */}
           <div
-            className={`flex flex-row py-6 px-5 gap-[15px] items-center w-full text-text-contrast ${
+            className={`flex flex-row py-5 px-5 gap-[15px] items-center w-full z-20 text-text-contrast ${
               isActive
                 ? "active text-primary-main bg-primary-background rounded-l-full"
                 : ""
             }`}
           >
-            <span role="img" aria-label={label}>
+            <span role="img" aria-label={label} className="z-20">
               {React.createElement(icon, {
                 ...navIconProps,
                 fill: isActive ? "#1A631B" : "#FFF", // Green for active, white for inactive
               })}
             </span>
-            <span className="font-nunito font-normal text-lg tracking-wide">
+            <span className={`font-nunito font-normal text-lg tracking-wide z-20 ${
+              isActive ? "text-primary-main" : ""
+            }`}>
               {label}
             </span>
           </div>
-        <span className={
-          `post-nav-span ${isActive ? "active" : ""}`
-        }></span>
         </>
       )}
     </NavLink>
+    </>
   );
 };
 
 const SideBar: React.FC = () => {
   return (
-    <div className="flex flex-row">
-      <div className="nav-sidebar shrink-0 w-auto pl-10 bg-primary-main max-w-fit flex min-h-screen height-screen flex-col">
+    <div className="flex flex-row bg-primary-background">
+      <div className="nav-sidebar rounded-r-[36px] shrink-0 w-auto pl-12 bg-primary-main max-w-fit flex min-h-screen height-screen flex-col">
         <LogoComponent />
         <div className="nav-container flex flex-col justify-between h-full mt-4">
           <nav>
@@ -112,7 +110,7 @@ const SideBar: React.FC = () => {
           </nav>
         </div>
       </div>
-      <main className="w-full bg-primary-background">
+      <main className="w-full bg-primary-background p-10">
         <Outlet />
       </main>
     </div>
